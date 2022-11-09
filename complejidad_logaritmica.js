@@ -1,7 +1,7 @@
 /*
     O(log N) Complejidad cuadratica
 */
-console.time('binarySearch');
+
 function binarySearch(array, num, prefix = 0) {
     if (array.length === 1) return array;
     let mIndex = Math.floor(array.length / 2);
@@ -20,7 +20,8 @@ function binarySearch(array, num, prefix = 0) {
     }
     return binarySearch(newArr, num, newPrefix);
 }
-binarySearch([1, 2, 3, 4, 5, 6], 10)
+console.time('binarySearch');
+binarySearch([1, 2, 3, 4, 5, 6], 10);
 console.timeEnd('binarySearch');
 
 
