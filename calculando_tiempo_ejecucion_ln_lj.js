@@ -27,5 +27,9 @@ proc { showValue value}
     else show("El valor no es 8") end
 end
 
-TshowValue(tam(I ( { value } ))) = K1 + max(K2, K3)
+TshowValue(tam(I ( { value } ))) = K1 + max(K2, K3) //Tiempo de ejecución de showValue
+TshowValue(n) = K1 + max(K2, K3)
+TshowValue(n) = K4
+TshowValue(n) = O(1)
+
 */
